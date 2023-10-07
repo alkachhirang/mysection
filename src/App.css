@@ -1,38 +1,254 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&family=Open+Sans&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1320px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: -12px !important;
+  padding-right: -12px !important;
+}
+
+.d_flex {
+  display: flex;
+}
+
+.align_items_center {
+  align-items: center;
+}
+
+.justify_content_center {
+  justify-content: center;
+}
+
+.justify_content_between {
+  justify-content: space-between;
+}
+
+.pt_29 {
+  padding-top: 29px;
+}
+
+.pt_22 {
+  padding-top: 22px;
+}
+
+.ff_hindi {
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+.ff_open {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.fw_600 {
+  font-weight: 600;
+}
+
+.fw_400 {
+  font-weight: 400;
+}
+
+.fs_40 {
+  font-size: 40px;
+}
+
+.fs_16 {
+  font-size: 16px;
+}
+
+.fs_24 {
+  font-size: 24px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.border_radius_30 {
+  border-radius: 30px;
+}
+
+.border_radius_15 {
+  border-radius: 15px;
+}
+
+.clr_black {
+  color: #232323;
+}
+
+.clr_red {
+  color: #9E3040;
+}
+
+.clr_grey {
+  color: #686868;
+}
+
+.clr_white {
+  color: #ffffff;
+}
+
+.text_uppercase {
+  text-transform: uppercase;
+}
+
+.text_nowrap {
+  white-space: nowrap;
+}
+
+.img_card {
+  border-radius: 10px;
+  background: #F3F5F6;
+  box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.00);
+  padding: 23px 14px 37px 14px;
+}
+
+.max_width_593 {
+  max-width: 593px;
+}
+
+.add_btn {
+  border-radius: 5px;
+  background: #232323;
+  padding: 8px 31px;
+  border: 2px solid transparent;
+  transition: 0.2s linear;
+}
+.add_btn:hover {
+  border-radius: 5px;
+  background:white;
+  padding: 8px 31px;
+  border: 2px solid #232323;
+  color: #232323 !important;
+}
+
+.card-img {
+  background-color: white;
+
+}
+
+.mt_50 {
+  margin-top: 50px;
+}
+.fs_18{
+  font-size: 18px;
+}
+.pt_50{
+  padding-top: 50px ;
+}
+.pb_47 {
+  padding-bottom: 47px;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.fs_36 {
+  font-size: 36px;
+}
+
+.position_relative {
+  position: relative;
+}
+
+.position_absolute {
+  position: absolute;
+  top: 27%;
+}
+.text_shadow{
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.max_width_343 {
+  max-width: 343px;
+}
+
+.text_center {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.show_button{
+  border-radius: 5px;
+    background: #9E3040;
+    box-shadow: 0px 0px 10px 0px rgba(158, 48, 64, 0.17);
+    padding: 10px 28px;
+    border:2px solid transparent;
+    transition: 0.2s linear;
+}
+.show_button:hover{
+  border-radius: 5px;
+    background:white;
+    box-shadow: 0px 0px 10px 0px rgba(158, 48, 64, 0.17);
+    padding: 10px 28px;
+    border:2px solid #9E3040;
+    color: #9E3040 !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.col_12 {
+  width: 100%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.mt_51 {
+  margin-top: 51px;
+}
+
+.pt_52 {
+  padding-top: 52px;
+}
+
+@media (min-width:1200px) {
+
+  .col_xl_5 {
+    width: 41.66%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .col_xl_7 {
+    width: 58.33%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .pt_52 {
+    padding-top: 0;
+  }
+  .pt_xl_89{
+    padding-top: 89px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+@media (min-width:992px) {}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width:768px) {
+  .col_md_6 {
+    width: 50%;
+    padding-left: 12px;
+    padding-right: 12px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .mt_51 {
+    margin-top: 0;
+  }
+
+  .fs_md_58 {
+    font-size: 58px;
   }
 }
